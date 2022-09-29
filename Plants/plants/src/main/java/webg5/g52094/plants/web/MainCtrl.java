@@ -1,4 +1,4 @@
-package webg5.g52094.musique.web;
+package webg5.g52094.plants.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import webg5.g52094.musique.business.PlantsService;
-import webg5.g52094.musique.model.Plant;
+
+import webg5.g52094.plants.business.PlantsService;
 
 @Controller
 public class MainCtrl {

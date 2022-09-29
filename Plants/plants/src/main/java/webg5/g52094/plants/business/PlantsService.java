@@ -1,4 +1,4 @@
-package webg5.g52094.musique.business;
+package webg5.g52094.plants.business;
 
 import java.util.Optional;
 
@@ -9,9 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import webg5.g52094.plants.jdbc.PlantDB;
+import webg5.g52094.plants.model.Plant;
 
-import webg5.g52094.musique.jdbc.PlantDB;
-import webg5.g52094.musique.model.Plant;
 
 @Service
 public class PlantsService {

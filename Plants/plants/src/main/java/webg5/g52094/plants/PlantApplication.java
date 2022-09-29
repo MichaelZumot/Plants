@@ -1,4 +1,4 @@
-package webg5.g52094.musique;
+package webg5.g52094.plants;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

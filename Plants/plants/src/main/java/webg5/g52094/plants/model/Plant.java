@@ -1,4 +1,4 @@
-package webg5.g52094.musique.model;
+package webg5.g52094.plants.model;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -9,7 +9,8 @@ import javax.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import webg5.g52094.musique.model.enums.Season;
+import webg5.g52094.plants.model.enums.Season;
+
 
 @Entity
 @Data
@@ -26,8 +27,8 @@ public class Plant {
 
     @NotBlank(message = "Name cannot be empty!")
     @Enumerated(EnumType.STRING)
-    private Season planingtSeason;
+    private Season plantingSeason;
 
-    private String descreiption;
+    private String description;
 
 }

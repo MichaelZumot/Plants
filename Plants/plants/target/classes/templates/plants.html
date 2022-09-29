@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org" xmlns:welcome="http://www.ultraq.net.nz/thymeleaf/layout"
-    layout:decorate="~{layout}">
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}">
 
 <head>
     <title>Plants | Home </title>
 </head>
-
+<body>
 <header th:replace="layout::header"></header>
 
-<body>
+
 
     <main layout:fragment="content">
 
@@ -23,8 +24,8 @@
             <tbody>
                 </tr>
                 <tr th:each="artist: ${artists}">
-                    <td> <a th:href="@{|/artistPage/${artist.login}|}" th:text="${artist.name}"> </a></td>
-                    <td th:text="${artist.nbTrack()}"></td>
+                    <td th:href="@{|/artistPage/${artist.login}|}" th:text="${artist.name}"></td>
+
                 </tr>
             </tbody>
         </table>
