@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:welcome="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout}">
+
+<head>
+    <title>Musique | Home </title>
+</head>
+
+<header th:replace="layout::header"></header>
+
+<body>
+
+    <main layout:fragment="content">
+
+        <div class="card">
+            <div class="card-body">
+                <h4>Bienvenue sur le site</h4>
+                <a class="active" href="/">Home</a>
+                <a class="active" href="/plants">Plants</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+<footer th:replace="layout :: footer" id="footer"></footer>
+
+</html>

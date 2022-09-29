@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:welcome="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout}">
+
+<head>
+    <title>Plants | Home </title>
+</head>
+
+<header th:replace="layout::header"></header>
+
+<body>
+
+    <main layout:fragment="content">
+
+        <table class="table" id="templatesList">
+            <thead>
+                <tr>
+                    <th>Plant Name </th>
+                    <th>Planting Seasons</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tr>
+                <tr th:each="artist: ${artists}">
+                    <td> <a th:href="@{|/artistPage/${artist.login}|}" th:text="${artist.name}"> </a></td>
+                    <td th:text="${artist.nbTrack()}"></td>
+                </tr>
+            </tbody>
+        </table>
+  <main>
+</body>
+
+<footer th:replace="layout :: footer" id="footer"></footer>
+
+</html>
